@@ -1,0 +1,96 @@
+<div class = "aleatory-number"></div>
+<button class = btn-primary (click)="AleatoryNumber()">jugar</button>
+<table>
+    <caption>Cartón de Bingo</caption>
+    <thead>
+      <tr>
+        <th>B</th>
+        <th>I</th>
+        <th>N</th>
+        <th>G</th>
+        <th>O</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button class = "number" id ="number1" (click)="markNumber($event)">1</button></td>
+        <td><button class = "number" id ="number2" (click)="markNumber($event)">2</button></td>
+        <td><button class = "number" id ="number3" (click)="markNumber($event)">3</button></td>
+        <td><button class = "number" id ="number4" (click)="markNumber($event)">4</button></td>
+        <td><button class = "number" id ="number5" (click)="markNumber($event)">5</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class = "number" id ="number6" (click)="markNumber($event)">6</button></td>
+        <td><button class = "number" id ="number7" (click)="markNumber($event)">7</button></td>
+        <td><button class = "number" id ="number8" (click)="markNumber($event)">8</button></td>
+        <td><button class = "number" id ="number9" (click)="markNumber($event)">9</button></td>
+        <td><button class = "number" id ="number10" (click)="markNumber($event)">10</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class = "number" id ="number11" (click)="markNumber($event)">11</button></td>
+        <td><button class = "number" id ="number12" (click)="markNumber($event)">12</button></td>
+        <td>X</td>
+        <td><button class = "number" id ="number13" (click)="markNumber($event)">13</button></td>
+        <td><button class = "number" id ="number14" (click)="markNumber($event)">14</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class = "number" id ="number15" (click)="markNumber($event)">15</button></td>
+        <td><button class = "number" id ="number16" (click)="markNumber($event)">16</button></td>
+        <td><button class = "number" id ="number17" (click)="markNumber($event)">17</button></td>
+        <td><button class = "number" id ="number18" (click)="markNumber($event)">18</button></td>
+        <td><button class = "number" id ="number19" (click)="markNumber($event)">19</button></td>
+      </tr>
+      
+      <tr>
+        <td><button class = "number" id ="number20" (click)="markNumber($event)">20</button></td>
+        <td><button class = "number" id ="number21" (click)="markNumber($event)">21</button></td>
+        <td><button class = "number" id ="number22" (click)="markNumber($event)">22</button></td>
+        <td><button class = "number" id ="number23" (click)="markNumber($event)">23</button></td>
+        <td><button class = "number" id ="number24" (click)="markNumber($event)">24</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn-primary" (click)="shoutBingo()">¡BINGO!</button>
+
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">ganadores</span>
+                    <div class="mb-3">
+                  </div>
+                    <table *ngIf="listTableBingo.length > 0" class="table table-striped mt-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">NUMERO</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let tableBingo of listTableBingo">
+                            <td>{{ tableBingo.name }}</td>
+                            <td>{{ tableBingo.number_table }}</td>
+                            
+                            <td>
+                                
+                        
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <h5 style="text-align: start; margin-top: 10px;" *ngIf="listTableBingo.length == 0">No hay productos para mostrar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

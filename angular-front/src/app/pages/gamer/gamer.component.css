@@ -1,0 +1,30 @@
+/*
+Template Name: Bingo
+Author: Yeferson Alejandro Valencia
+Email: Aleajndro.yandd@gmail.com
+File: scss
+*/
+
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*******************
+Login register and recover password Page
+******************/
+
+table
+{
+  margin: 100px auto;
+  font-size: 24px;
+}
+
+table, tr, td, th
+{
+  border: 2px solid black;
+  border-collapse:collapse;
+  border-collapse:separate;
+  caption-side:bottom;
+}
+
