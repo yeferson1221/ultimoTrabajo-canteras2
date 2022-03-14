@@ -1,8 +1,9 @@
 # ultimoTrabajo-canteras2
 
 
-## iniciar servidor  npm run start:dev
+
 ### backend nodejs terminado login y registrar
+###### iniciar servidor  npm run start:dev
    - registro normal - registro  nombre email y contraseña 
    - registro con google - inicia solo con la cuenta de google 
 
@@ -10,7 +11,7 @@
     la aplicacion tiene la capacidad de borrar listar crear cambiar rol y actualizar pero solo el administrador de la pagina
     el usuario es ( yefer100@gmail.com  y la contraseña es 123456 ) ya que la aplicacion no tiene forma de registrar
     usuarios admin. solo se puede poner un admin desde la BD mongo o desde una cuenta admin, la ruta no esta puesta en la pagina 
-    por eso para llegar http://localhost:4200/dashboard/usuarios este link solo funciona si se loguea el usuario admin.
+    por eso para llegar una vez se haya logeado http://localhost:4200/dashboard/usuarios este link solo funciona si se loguea el usuario admin.
     
     para ingresar como usuario normal se puede crear la cuenta en registrar  pero este usuario no tiene acceso a  modificar ningun usuario
     
