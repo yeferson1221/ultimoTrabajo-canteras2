@@ -6,6 +6,9 @@
 ###### iniciar servidor  npm run start:dev
    - registro normal - registro  nombre email y contraseña 
    - registro con google - inicia solo con la cuenta de google 
+   - editar color de la pagina
+   - editar perfil foto y  nombre 
+   - tipo de rol
 
 ### cambio de rol  de admin a usuario normal 
     la aplicacion tiene la capacidad de borrar listar crear cambiar rol y actualizar pero solo el administrador de la pagina
